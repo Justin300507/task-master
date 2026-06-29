@@ -1,0 +1,47 @@
+{
+  "decisions": [
+    {
+      "agent": "product_manager",
+      "decision": "product_spec_created",
+      "rationale": "A simple, fast, and collaborative todo app to capture, organize, and complete tasks.",
+      "data": {
+        "features": 6,
+        "user_stories": 6,
+        "must_have": [
+          "Task CRUD",
+          "User Authentication & Authorization",
+          "Task Filtering, Search & Pagination"
+        ]
+      }
+    },
+    {
+      "agent": "architect",
+      "decision": "architecture_created",
+      "rationale": "30 endpoints across 8 files",
+      "data": {
+        "endpoints": 30
+      }
+    },
+    {
+      "agent": "tech_lead",
+      "decision": "constraints_set",
+      "rationale": "The proposed architecture covers most core CRUD operations and aligns with the product spec, but it lacks proper authentication enforcement on many ro",
+      "data": {
+        "critical_issues": 2,
+        "auth_endpoints": 25,
+        "pagination_required": 5
+      }
+    },
+    {
+      "agent": "orchestrator",
+      "decision": "pipeline_complete",
+      "rationale": "V6 score: 79/100",
+      "data": {
+        "total_time": 16.17,
+        "can_export": true
+      }
+    }
+  ],
+  "conflicts": [],
+  "shared_context_keys": []
+}
